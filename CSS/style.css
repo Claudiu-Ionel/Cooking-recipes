@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --card-size: 150px;
+
+}
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,4 +31,51 @@ nav a {
 }
 nav a:hover {
   text-decoration: underline 2px blue;
+}
+
+/* section {position: relative;} */
+
+.ingredient-card {
+  position: relative;
+  margin-left: -150px;
+  animation: flow 1s normal forwards ease-in;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes flow {
+  from {
+    margin-left:-150px;
+  }
+  to {
+    margin-left: 10px
+  }
+}
+
+/* .ingredient-card:nth-child(1):hover + .ingredient-card:nth-child(2) {
+  left: 40px;
+} */
+.ingredient-card:nth-child(1) {
+  z-index: 5;
+}
+.recipe-ingredients {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  min-height: 200px;
+  padding: 15px;
+}
+.ingredient-card {
+  width: 150px;
+  height: 180px;
+  background: #fff;
+  outline: 5px solid gray;
+  outline-offset: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 500ms;
 }
