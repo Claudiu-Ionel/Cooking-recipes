@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@
 html {
   font-size: 16px;
   overflow-x: hidden;
+  font-family: 'Press Start 2P', cursive;
 }
 
 body {
@@ -34,7 +37,10 @@ nav a:hover {
 }
 
 /* section {position: relative;} */
-
+.recipe-ingredients {
+  display: flex;
+  justify-content: center;
+}
 .ingredient-card {
   position: relative;
   margin-left: -150px;
@@ -52,21 +58,18 @@ nav a:hover {
   }
 }
 
-/* .ingredient-card:nth-child(1):hover + .ingredient-card:nth-child(2) {
-  left: 40px;
-} */
-.ingredient-card:nth-child(1) {
-  z-index: 5;
-}
+
 .recipe-ingredients {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   height: fit-content;
   min-height: 200px;
   padding: 15px;
 }
 .ingredient-card {
+  position: relative;
   width: 150px;
   height: 180px;
   background: #fff;
@@ -78,4 +81,14 @@ nav a:hover {
   align-items: center;
   border-radius: 10px;
   transition: all 500ms;
+}
+.ingredient-card:hover {
+  transform: scale(1.2);
+}
+.ingredient-card section img {
+  width: 100%;
+  height: 165px;
+}
+.ingredient-card header {
+  position: absolute;
 }
