@@ -15,32 +15,86 @@ html {
 
 body {
   background-color: antiquewhite;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.text-with-shadow {
+  color: rgb(245, 235, 216);
+  text-shadow: 0.1rem 0.1rem 0px red;
+}
+.intro-title {
+  text-align: center;
+  font-size: 2rem;
+}
+.container {
+  max-width: 900px;
+  padding: 20px 12px;
+  background-color: #fff;
+}
 nav {
   background-color: #fff;
   width: 100%;
   height: 80px;
+  padding: 0px 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 nav a {
   text-decoration: none;
   font-size: 2rem;
+  position: relative;
 }
-
+.nav-section {
+  display: flex;
+  gap: 15px;
+}
 nav .logo {
   width: 75px;
   height: 75px;
+  mix-blend-mode: normal;
 }
 nav a:hover {
-  text-decoration: underline 2px blue;
+  transition: all 1s;
 }
 
-.title-background-image {
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  height: 2px;
+  border-radius: 20px;
+  background-color: red;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+nav a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+nav a:hover::after,
+nav a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+nav a:hover::after,
+nav a:focus::after {
+  transform: scale(1);
+}
+.title-background-image {
+  width: 100vw;
   height: 500px;
   background: grey
     url("../assets/hematofag_top_of_the_table_with_scattered_food_like_hamburgers__fdfc0c10-5070-40ae-aba3-8886ea4523dc.png")
@@ -72,10 +126,6 @@ nav a:hover {
   }
 }
 
-.recipe-ingredients {
-  display: flex;
-  justify-content: center;
-}
 .ingredient-card {
   position: relative;
   margin-left: -150px;
@@ -95,26 +145,36 @@ nav a:hover {
 /* cards css */
 .recipe-ingredients {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;
   min-height: 200px;
   padding: 15px;
+  gap: 5px;
 }
 .ingredient-card {
   position: relative;
   width: 150px;
   height: 180px;
   background: #fff;
-  outline: 5px solid gray;
-  outline-offset: -10px;
+  outline: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   transition: all 500ms;
+}
+.ingredient-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+.ingredient-title {
+  text-transform: capitalize;
+  font-size: 2rem;
 }
 .ingredient-card:hover {
   transform: scale(1.2);
@@ -125,4 +185,8 @@ nav a:hover {
 }
 .ingredient-card header {
   position: absolute;
+}
+
+.recipe-preparation {
+  font-size: 1.8rem;
 }
