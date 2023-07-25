@@ -48,7 +48,8 @@ nav {
   z-index: 5;
 }
 
-nav a {
+nav a,
+nav details {
   text-decoration: none;
   font-size: 2rem;
   position: relative;
@@ -62,11 +63,49 @@ nav .logo {
   height: 75px;
   mix-blend-mode: normal;
 }
-nav a:hover {
-  transition: all 1s;
+details {
+  position: relative;
+  width: fit-content;
+}
+details > summary:first-of-type {
+  list-style-type: none;
+}
+details .recipe-list-container {
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-list-item {
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  left: 50%;
+  top: 57px;
+  transform: translateX(-50%);
+  padding: 0 10px 10px;
+  background-color: #fff;
+  text-decoration: none;
+  color: inherit;
 }
 
-nav a::after {
+.recipe-list-item:nth-child(3) {
+  top: 100px;
+}
+.recipe-list-item:nth-child(4) {
+  top: 145px;
+}
+.recipe-list-item:hover {
+  text-decoration: underline;
+}
+nav a:hover,
+nav details:hover {
+  text-decoration: underline;
+}
+
+/* nav a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -92,7 +131,7 @@ nav a:focus::after {
 nav a:hover::after,
 nav a:focus::after {
   transform: scale(1);
-}
+} */
 .title-background-image {
   width: 100vw;
   height: 500px;
