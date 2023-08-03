@@ -1,5 +1,7 @@
 /* Google Fonts import */
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Podkova&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Itim&family=Podkova&display=swap");
+
+/* Browser reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +12,14 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   overflow-x: hidden;
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #e3713a;
 
-  font-family: "Cookie", cursive;
+  font-family: "Itim", cursive;
 }
 
 main {
@@ -28,14 +30,22 @@ main {
   align-items: center;
 }
 /* General styles */
-.hidden-heading {
+h3,
+h4 {
+  color: #4c9161;
+}
+.hidden {
   display: none;
 }
 .text-with-shadow {
   color: rgb(245, 235, 216);
   text-shadow: 0.1rem 0.1rem 0px red;
 }
-
+.box-shadow {
+  -webkit-box-shadow: 1px 5px 5px -3px #3a3a3a;
+  -moz-box-shadow: 1px 5px 5px -3px #3a3a3a;
+  box-shadow: 1px 5px 5px -3px #3a3a3a;
+}
 .container {
   width: 100%;
   max-width: 900px;
@@ -68,7 +78,7 @@ nav {
 nav a,
 nav details {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 100%;
   position: relative;
   color: red;
 }
@@ -81,43 +91,39 @@ nav .logo {
   height: 75px;
   mix-blend-mode: normal;
 }
+
+/* Details container styles */
+
 details {
   position: relative;
-  width: fit-content;
   cursor: pointer;
+  width: min-content;
 }
 details > summary:first-of-type {
   list-style-type: none;
 }
-details .recipe-list-container {
-  position: absolute;
-  background-color: #fff;
+
+details > .nav-list-wrapper {
   display: flex;
   height: fit-content;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
-}
-
-/* Details container styles */
-.recipe-list-item {
   position: absolute;
-  width: 230px;
   z-index: 2;
-  left: 50%;
-  top: 60px;
-  transform: translateX(-50%);
-  padding: 10px;
+  right: 78%;
+  transform: translateX(50%);
+  top: 49px;
   background-color: #fff;
   text-decoration: none;
   color: inherit;
 }
 
-.recipe-list-item:nth-child(3) {
-  top: 105px;
+.recipe-list-item {
+  padding: 10px;
+  text-align: center;
 }
-.recipe-list-item:nth-child(4) {
-  top: 150px;
-}
+
 .recipe-list-item:hover {
   text-decoration: underline;
 }
@@ -128,14 +134,15 @@ nav details:hover {
 
 /* drooling face CSS */
 .drooling-face-wrapper {
+  display: none !important;
   width: 45px;
   height: 45px;
   background-color: #fff;
   display: grid;
   place-items: center;
   position: absolute;
-  left: -64%;
-  top: -4px;
+  left: -50px;
+  top: -10%;
 }
 
 .drooling-face-body {
@@ -237,7 +244,7 @@ details:hover .drooling-face-mouth {
   place-items: center;
 }
 #main-title {
-  font-size: 500%;
+  font-size: 300%;
   width: 100%;
   text-align: center;
   color: rgb(245, 235, 216);
@@ -331,6 +338,7 @@ details:hover .drooling-face-mouth {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-family: "Podkova", serif;
 }
 
 .about-us h3 {
@@ -344,5 +352,6 @@ details:hover .drooling-face-mouth {
 
 footer {
   height: 80px;
-  background-color: #fff;
+  background-color: #4c9161;
+  color: #fff;
 }
