@@ -350,10 +350,29 @@ details:hover .drooling-face-mouth {
   font-size: 1.5rem;
 }
 
-/* Footer style */
+/* Footer styles */
 
 footer {
   height: 80px;
+  width: 100%;
   background-color: #4c9161;
+}
+
+#social-networks li {
+  list-style-type: none;
+}
+
+#social-networks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+#social-networks li {
+  list-style-type: none;
+}
+#social-networks i {
   color: #fff;
+  font-size: 24px;
 }
