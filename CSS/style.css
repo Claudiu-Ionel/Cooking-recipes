@@ -322,6 +322,7 @@ details:hover .drooling-face-mouth {
 }
 .ingredient-card:hover {
   transform: scale(1.2);
+  z-index: 2;
 }
 .ingredient-card section img {
   width: 100%;
