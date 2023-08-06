@@ -283,7 +283,7 @@ details:hover .drooling-face-mouth {
   height: fit-content;
   min-height: 200px;
   padding: 15px;
-  gap: 5px;
+  gap: 10px;
 }
 
 /* Ingredient card styles */
