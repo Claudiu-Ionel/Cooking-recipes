@@ -277,6 +277,17 @@ details:hover .drooling-face-mouth {
 .recipe-ingredients {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  min-height: 200px;
+  padding: 15px;
+  gap: 10px;
+}
+.recipe-ingredients-cards {
+  display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
@@ -285,7 +296,6 @@ details:hover .drooling-face-mouth {
   padding: 15px;
   gap: 10px;
 }
-
 /* Ingredient card styles */
 .ingredient-card {
   margin-left: -150px;
