@@ -19,6 +19,7 @@ html {
 body {
   background-color: #e3713a;
   font-family: "Itim", cursive;
+  min-height: 100vh;
 }
 
 main {
@@ -52,7 +53,9 @@ h4 {
   padding: 20px;
   background-color: #fff;
 }
-
+.text-left {
+  text-align: left;
+}
 /* Navigation styles */
 
 header {
@@ -349,6 +352,46 @@ details:hover .drooling-face-mouth {
 }
 .featured-recepies h3 {
   font-size: 1.5rem;
+}
+
+/* Omlette wrap */
+.recipe-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-image {
+  max-width: 200px;
+  height: auto;
+}
+/* How to make section */
+.how-to-make {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.how-to-make ol {
+  list-style-position: inside;
+  list-style-type: none;
+}
+.how-to-make li {
+  margin-bottom: 8px;
+  position: relative;
+  line-height: 24px;
+}
+
+.how-to-make ol span {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #3a3a3a;
 }
 
 /* Footer styles */
