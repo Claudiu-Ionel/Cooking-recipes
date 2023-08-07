@@ -372,6 +372,9 @@ details:hover .drooling-face-mouth {
   flex-wrap: wrap;
   justify-content: center;
 }
+.recipe-title h1 {
+  font-size: 200%;
+}
 .recipe-image {
   max-width: 200px;
   height: auto;
