@@ -367,8 +367,10 @@ details:hover .drooling-face-mouth {
 /* Omlette wrap */
 .recipe-title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .recipe-image {
   max-width: 200px;
@@ -411,6 +413,9 @@ details:hover .drooling-face-mouth {
 .recipe-video h2 {
   color: #4c9161;
   margin-bottom: 10px;
+}
+.external-reference span a {
+  color: #4c9161;
 }
 /* Footer styles */
 
