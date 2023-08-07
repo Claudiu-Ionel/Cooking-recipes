@@ -406,7 +406,12 @@ details:hover .drooling-face-mouth {
   color: #fff;
   background-color: #3a3a3a;
 }
+/* Recipe video */
 
+.recipe-video h2 {
+  color: #4c9161;
+  margin-bottom: 10px;
+}
 /* Footer styles */
 
 footer {
