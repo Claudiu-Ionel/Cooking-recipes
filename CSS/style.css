@@ -384,6 +384,9 @@ details:hover .drooling-face-mouth {
   list-style-position: inside;
   list-style-type: none;
 }
+.how-to-make h2 {
+  color: #4c9161;
+}
 .how-to-make li {
   margin-bottom: 8px;
   position: relative;
