@@ -20,6 +20,11 @@ body {
   background-color: #e3713a;
   font-family: "Itim", cursive;
   min-height: 100vh;
+  /* added flex so that the footer will have flex-shrink: 0 
+  -> this will keep it at the bottom of the page 
+  even if the main element doesnt have content */
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -484,10 +489,8 @@ details:hover .drooling-face-tongue {
 /* Contact page styles */
 
 #contact-section {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translateX(-50%);
+  position: relative;
+  margin-top: -400px;
   max-width: 600px;
   flex-grow: 1;
   padding: 20px;
@@ -521,6 +524,8 @@ details:hover .drooling-face-tongue {
 /* Footer styles */
 
 footer {
+  /* this will keep the footer at the bottom of the page */
+  flex-shrink: 0;
   height: 80px;
   width: 100%;
   background-color: #4c9161;
