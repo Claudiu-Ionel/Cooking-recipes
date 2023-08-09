@@ -489,11 +489,15 @@ details:hover .drooling-face-tongue {
 /* Contact page styles */
 
 #contact-section {
+  display: flex;
   position: relative;
   margin-top: -400px;
   max-width: 600px;
   flex-grow: 1;
   padding: 20px;
+}
+#contact-section h2 {
+  color: #4c9161;
 }
 #contact-form {
   margin: 0 auto;
@@ -520,6 +524,9 @@ details:hover .drooling-face-tongue {
   padding: 10px;
   border-radius: 5px;
   border: none;
+}
+#inputs-section button {
+  cursor: pointer;
 }
 /* Footer styles */
 
