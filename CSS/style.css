@@ -489,7 +489,6 @@ details:hover .drooling-face-tongue {
 /* Contact page styles */
 
 #contact-section {
-  display: flex;
   position: relative;
   margin-top: -400px;
   max-width: 600px;
