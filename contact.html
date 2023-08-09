@@ -76,84 +76,32 @@
     </header>
     <main>
       <section>
-        <div class="hero-image">
-          <h1 id="main-title" class="text-with-shadow">
-            Welcome to Quick Meals!
-          </h1>
-        </div>
+        <div class="hero-image"></div>
       </section>
-      <section class="container">
-        <h2 class="intro-title">
-          Your ultimate destination for mouthwatering, time-friendly recipes.
-        </h2>
-      </section>
-
-      <section class="about-us container">
-        <h3>Why Choose Us?</h3>
-        <p>
-          <b>Time-Saving Recipes:</b> We understand the value of time in your
-          daily life, which is why our collection primarily focuses on recipes
-          that can be prepared in a short time without compromising on taste or
-          nutrition.
-        </p>
-        <p>
-          <b>Diverse Cuisine:</b> Our team of culinary enthusiasts has curated a
-          diverse array of recipes from various cuisines, allowing you to
-          explore new flavors and cuisines from the comfort of your kitchen.
-        </p>
-        <p>
-          <b>Quality and Simplicity:</b> Each recipe on our website is carefully
-          crafted and tested to ensure it's easy to follow, even for beginners,
-          while delivering exceptional results every time.
-        </p>
-        <p>
-          <b>Healthy Choices:</b> While we prioritize quick cooking, we also
-          emphasize health-conscious choices, providing options for those
-          seeking nutritious and balanced meals.
-        </p>
-      </section>
-      <section class="featured-recepies container">
-        <h3>Try These Quick Favorites</h3>
-        <section class="recipe-ingredients container">
-          <div class="recipe-ingredients-cards">
-            <article class="ingredient-card">
-              <h4 class="ingredient-title text-with-shadow">omlette wrap</h4>
-
-              <section>
-                <img
-                  class="ingredient-image"
-                  src="assets/omlette_wrapp_midjourney2.png"
-                  alt="omelette wrap image (links to omlette wrap recipe page)"
-                />
-              </section>
-            </article>
-            <article class="ingredient-card">
-              <h4 class="ingredient-title text-with-shadow">BLT sandwich</h4>
-
-              <section>
-                <a href="blt-sandwitch.html"
-                  ><img
-                    class="ingredient-image"
-                    src="assets/bacon_sandwitch_midjourney2.png"
-                    alt="BLT sandwich image (links to BLT sandwich recipe page)"
-                /></a>
-              </section>
-            </article>
-            <article class="ingredient-card">
-              <h4 class="ingredient-title text-with-shadow">tortilla</h4>
-
-              <section>
-                <a href="vegetarian_pizza.html">
-                  <img
-                    class="ingredient-image"
-                    src="assets/vegetarian_pizza_midjourney1.png"
-                    alt="Vegetarian pizza image (links to Vegetarian pizza recipe page)"
-                  />
-                </a>
-              </section>
-            </article>
-          </div>
-        </section>
+      <section id="contact-section" class="container">
+        <form
+          action="https://formdump.codeinstitute.net"
+          id="contact-form"
+          method="POST"
+        >
+          <h2>Give us some feedback?</h2>
+          <i class="fa-solid fa-burger"></i>
+          <section id="inputs-section">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+            <label for="name">Email</label>
+            <input type="email" name="email" id="email" required />
+            <label for="feedback">Message</label>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <input type="submit" value="Send" />
+          </section>
+        </form>
       </section>
     </main>
     <!-- Footer -->

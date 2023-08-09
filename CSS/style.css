@@ -137,6 +137,13 @@ nav details:hover {
 }
 
 /* drooling face CSS */
+#contact-form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .drooling-face-wrapper {
   visibility: hidden;
   width: 45px;
@@ -472,6 +479,44 @@ details:hover .drooling-face-tongue {
 }
 .external-reference span a {
   color: #4c9161;
+}
+
+/* Contact page styles */
+
+#contact-section {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  max-width: 600px;
+  flex-grow: 1;
+  padding: 20px;
+}
+#contact-form {
+  margin: 0 auto;
+}
+#contact-form i {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: red;
+}
+#contact-form .drooling-face-wrapper {
+  visibility: visible;
+}
+#inputs-section {
+  background-color: rgb(255, 217, 3);
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+#inputs-section input,
+#inputs-section textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 /* Footer styles */
 
