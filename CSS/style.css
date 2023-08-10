@@ -307,9 +307,8 @@ details:hover .drooling-face-tongue {
 .hero-image {
   width: 100vw;
   height: 500px;
-  background: grey
-    url("../assets/hematofag_top_of_the_table_with_scattered_food_like_hamburgers__fdfc0c10-5070-40ae-aba3-8886ea4523dc.png")
-    top center / cover no-repeat;
+  background: grey url("../assets/hero_image_midjourney1.png") top center /
+    cover no-repeat;
   display: grid;
   place-items: center;
 }
