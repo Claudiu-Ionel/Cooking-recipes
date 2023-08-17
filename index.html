@@ -27,25 +27,26 @@
     <link rel="manifest" href="./favicon/site.webmanifest" />
     <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <!-- Title -->
     <title>Quick Meals</title>
   </head>
   <body>
     <header class="box-shadow">
       <nav>
-        <section class="nav-section">
+        <div class="nav-section">
           <a href="index.html">
             <img
               class="logo"
               src="./assets/hamburger-logo1"
               alt="hamburger logo"
             />
-            <h1 class="hidden">Quick Meals</h1>
+            <p class="hidden">Quick Meals</p>
           </a>
-        </section>
-        <section class="nav-section">
+        </div>
+        <div class="nav-section">
           <details>
             <summary>Recipes</summary>
-            <section class="drooling-face-wrapper">
+            <div class="drooling-face-wrapper">
               <div class="drooling-face-body">
                 <div class="drooling-face-eye-top"></div>
                 <div class="drooling-face-eye-top"></div>
@@ -57,7 +58,7 @@
                 <div class="tongue-hidder"></div>
                 <div class="drooling-face-tongue"></div>
               </div>
-            </section>
+            </div>
             <div class="nav-list-wrapper box-shadow">
               <a class="recipe-list-item" href="omlette_wrapper.html">
                 Omelette Wrapp
@@ -71,10 +72,11 @@
             </div>
           </details>
           <a class="" href="contact.html">Contact</a>
-        </section>
+        </div>
       </nav>
     </header>
     <main>
+      <!-- Hero Image -->
       <section>
         <div class="hero-image">
           <h1 id="main-title" class="text-with-shadow">
@@ -87,7 +89,7 @@
           Your ultimate destination for mouthwatering, time-friendly recipes.
         </h2>
       </section>
-
+      <!-- About Us Section -->
       <section class="about-us container">
         <h3>Why Choose Us?</h3>
         <p>
@@ -112,14 +114,16 @@
           seeking nutritious and balanced meals.
         </p>
       </section>
+      <!-- Featured Recepies Section -->
       <section class="featured-recepies container">
         <h3>Try These Quick Favorites</h3>
         <section class="recipe-ingredients container">
+          <h4 class="hidden">Recipe ingredients</h4>
           <div class="recipe-ingredients-cards">
             <article class="ingredient-card">
               <h4 class="ingredient-title text-with-shadow">omlette wrap</h4>
 
-              <section>
+              <div>
                 <a href="blt-sandwitch.html">
                   <img
                     class="ingredient-image"
@@ -127,24 +131,24 @@
                     alt="omelette wrap image (links to omlette wrap recipe page)"
                   />
                 </a>
-              </section>
+              </div>
             </article>
             <article class="ingredient-card">
               <h4 class="ingredient-title text-with-shadow">BLT sandwich</h4>
 
-              <section>
+              <div>
                 <a href="blt-sandwitch.html"
                   ><img
                     class="ingredient-image"
                     src="assets/bacon_sandwitch_midjourney2.webp"
                     alt="BLT sandwich image (links to BLT sandwich recipe page)"
                 /></a>
-              </section>
+              </div>
             </article>
             <article class="ingredient-card">
               <h4 class="ingredient-title text-with-shadow">tortilla</h4>
 
-              <section>
+              <div>
                 <a href="vegetarian_pizza.html">
                   <img
                     class="ingredient-image"
@@ -152,7 +156,7 @@
                     alt="Vegetarian pizza image (links to Vegetarian pizza recipe page)"
                   />
                 </a>
-              </section>
+              </div>
             </article>
           </div>
         </section>
