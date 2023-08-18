@@ -293,8 +293,8 @@ details:hover .drooling-face-tongue {
 .hero-image {
   width: 100vw;
   height: 500px;
-  background: grey url("../assets/hero_image_midjourney1.webp") top center /
-    cover no-repeat;
+  background: grey url("../hero_image_midjourney1.webp") top center / cover
+    no-repeat;
   display: grid;
   place-items: center;
 }
