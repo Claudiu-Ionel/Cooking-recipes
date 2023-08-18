@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --card-size: 150px;
 }
@@ -41,33 +42,33 @@ h3,
 h4 {
   color: #4c9161;
 }
+
 .hidden {
   display: none;
 }
+
 .text-with-shadow {
   color: black;
   /* color: rgb(245, 235, 216); */
   /* text-shadow: 0.1rem 0.1rem 0px #ef0000; */
 }
+
 .box-shadow {
   -webkit-box-shadow: 1px 5px 5px -3px #3a3a3a;
   -moz-box-shadow: 1px 5px 5px -3px #3a3a3a;
   box-shadow: 1px 5px 5px -3px #3a3a3a;
 }
+
 .container {
   width: 100%;
   max-width: 900px;
   padding: 20px;
   background-color: #fff;
 }
+
 .text-left {
   text-align: left;
 }
-
-iframe {
-  width: 100%;
-}
-/* Navigation styles */
 
 header {
   width: 100%;
@@ -77,6 +78,7 @@ header {
   z-index: 40;
 }
 
+/* Navigation styles */
 nav {
   background-color: #fff;
   width: 100%;
@@ -97,10 +99,12 @@ nav details {
   position: relative;
   color: #ef0000;
 }
+
 .nav-section {
   display: flex;
   gap: 15px;
 }
+
 nav .logo {
   width: 75px;
   height: 75px;
@@ -114,6 +118,7 @@ details {
   cursor: pointer;
   width: min-content;
 }
+
 details > summary:first-of-type {
   list-style-type: none;
 }
@@ -142,19 +147,14 @@ details > .nav-list-wrapper {
 .recipe-list-item:hover {
   text-decoration: underline;
 }
+
 nav a:hover,
 nav details:hover {
   text-decoration: underline;
 }
 
-/* drooling face CSS */
-#contact-form {
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* Drooling face CSS */
+
 .drooling-face-wrapper {
   visibility: hidden;
   width: 45px;
@@ -218,26 +218,6 @@ nav details:hover {
 }
 
 .drooling-face-mouth {
-  width: 70%;
-  height: 70%;
-  border: 4px solid transparent;
-  border-radius: 50%;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-color: transparent;
-  border-bottom-color: #ef0000;
-  background-color: #fff;
-  transition: all 500ms;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  z-index: 3;
-}
-
-.drooling-face-mouth {
   width: 79%;
   height: 112%;
   border: 2px solid transparent;
@@ -287,6 +267,7 @@ nav details:hover {
   z-index: 2;
 }
 
+/* Drooling face hover transitions */
 details:hover .drooling-face-eye-bottom:nth-child(3),
 details:hover .drooling-face-eye-bottom:nth-child(4) {
   top: 32%;
@@ -317,6 +298,7 @@ details:hover .drooling-face-tongue {
   display: grid;
   place-items: center;
 }
+
 #main-title {
   font-size: 300%;
   width: 100%;
@@ -325,25 +307,24 @@ details:hover .drooling-face-tongue {
   animation: main-title-animation 600ms normal forwards ease-in;
   animation-iteration-count: 1;
   text-shadow: -15px 5px 20px #ced0d3;
-  /* text-shadow: 5px 5px 0px #ffb650, 10px 10px 0px #ffd662, 15px 15px 0px #ff80bf,
-    20px 20px 0px #ef5097, 25px 25px 0px #6868ac, 30px 30px 0px #90b1e0; */
 }
+
+/* Main title animation */
 @keyframes main-title-animation {
   from {
     text-shadow: 0px 0px 0px #ef0000;
-    /* 0px 0px 0px orange, 0px 0px 0px yellow; */
-    /* 0px 0px 0px #ef0000, 0px 0px 0px orange, 0px 0px 0px yellow; */
   }
+
   to {
     text-shadow: 5px 5px 0px #ef0000;
-    /* 10px 10px 0px orange, 15px 15px 0px yellow; */
-    /* 20px 20px 0px #ef0000, 25px 25px 0px orange, 30px 30px 0px yellow; */
   }
 }
+
 .intro-title {
   font-size: 2rem;
 }
 
+/* Recipe ingredients styles */
 .recipe-ingredients {
   display: flex;
   justify-content: center;
@@ -355,6 +336,7 @@ details:hover .drooling-face-tongue {
   padding: 15px;
   gap: 10px;
 }
+
 .recipe-ingredients-cards {
   display: flex;
   justify-content: center;
@@ -369,9 +351,6 @@ details:hover .drooling-face-tongue {
 
 /* Ingredient card styles */
 .ingredient-card {
-  margin-left: -150px;
-  animation: flow 1s normal forwards ease-in;
-  animation-iteration-count: 1;
   position: relative;
   width: 150px;
   height: 180px;
@@ -387,10 +366,12 @@ details:hover .drooling-face-tongue {
   box-shadow: 6px 5px 4px #4c9161;
 }
 
+/* Ingredient Cards animation - only large or landscape phones */
 @keyframes flow {
   from {
     margin-left: -150px;
   }
+
   to {
     margin-left: 10px;
   }
@@ -401,10 +382,12 @@ details:hover .drooling-face-tongue {
   height: 100%;
   aspect-ratio: 1 / 1;
 }
+
 .ingredient-title {
   text-transform: capitalize;
   font-size: 2rem;
 }
+
 .ingredient-card:hover {
   transform: scale(1.2);
   z-index: 2;
@@ -415,17 +398,14 @@ details:hover .drooling-face-tongue {
   width: 100%;
   height: 165px;
 }
+
 .ingredient-card h4 {
   font-size: 1rem;
   position: absolute;
   z-index: 100;
   bottom: 10px;
 }
-
-.recipe-preparation {
-  font-size: 1.8rem;
-}
-
+/* About us */
 .about-us {
   text-align: left;
   display: flex;
@@ -437,11 +417,12 @@ details:hover .drooling-face-tongue {
 .about-us h3 {
   font-size: 1.5rem;
 }
+
 .featured-recepies h3 {
   font-size: 1.5rem;
 }
 
-/* Omlette wrap */
+/* Recipe Page Styles - applies to all 3 recipe pages */
 .recipe-title {
   display: flex;
   flex-direction: row;
@@ -449,33 +430,39 @@ details:hover .drooling-face-tongue {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .recipe-title h1 {
   font-size: 200%;
 }
+
 .recipe-image {
   max-width: 200px;
   height: auto;
 }
+
 /* How to make section */
 .how-to-make {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .how-to-make ol {
   list-style-position: inside;
   list-style-type: none;
 }
+
 .how-to-make h2 {
   color: #4c9161;
 }
+
 .how-to-make li {
   margin-bottom: 8px;
   position: relative;
   line-height: 24px;
 }
 
-.how-to-make ol span {
+.how-to-make ol li span {
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
@@ -488,12 +475,16 @@ details:hover .drooling-face-tongue {
   color: #fff;
   background-color: #3a3a3a;
 }
-/* Recipe video */
 
+/* Recipe video */
+iframe {
+  width: 100%;
+}
 .recipe-video h2 {
   color: #4c9161;
   margin-bottom: 10px;
 }
+
 .external-reference span a {
   color: #4c9161;
 }
@@ -507,20 +498,25 @@ details:hover .drooling-face-tongue {
   flex-grow: 1;
   padding: 20px;
 }
+
 #contact-section h2 {
   color: #4c9161;
 }
+
 #contact-form {
   margin: 0 auto;
 }
+
 #contact-form i {
   font-size: 3rem;
   margin: 10px 0;
   color: #ef0000;
 }
+
 #contact-form .drooling-face-wrapper {
   visibility: visible;
 }
+
 #inputs-section {
   background-color: rgb(255, 217, 3);
   width: 100%;
@@ -530,12 +526,14 @@ details:hover .drooling-face-tongue {
   padding: 20px;
   gap: 10px;
 }
+
 #inputs-section input,
 #inputs-section textarea {
   padding: 10px;
   border-radius: 5px;
   border: none;
 }
+
 #inputs-section button {
   cursor: pointer;
   width: fit-content;
@@ -548,6 +546,7 @@ details:hover .drooling-face-tongue {
 #inputs-section button:hover {
   outline: 2px solid #ef0000;
 }
+
 /* Footer styles */
 
 footer {
@@ -572,6 +571,7 @@ footer {
 #social-networks li {
   list-style-type: none;
 }
+
 #social-networks i {
   color: #fff;
   font-size: 24px;
@@ -582,5 +582,14 @@ footer {
 @media screen and (min-width: 375px) {
   .drooling-face-wrapper {
     visibility: visible;
+  }
+}
+/* Media query: large or landscape phones(820px and up) */
+
+@media screen and (min-width: 820px) {
+  .ingredient-card {
+    margin-left: -150px;
+    animation: flow 1s normal forwards ease-in;
+    animation-iteration-count: 1;
   }
 }
