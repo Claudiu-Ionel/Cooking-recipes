@@ -525,6 +525,7 @@ iframe {
   flex-direction: column;
   padding: 20px;
   gap: 10px;
+  margin: 0 auto;
 }
 
 #inputs-section input,
@@ -584,12 +585,15 @@ footer {
     visibility: visible;
   }
 }
-/* Media query: large or landscape phones(820px and up) */
+/* Media query: large or landscape phones(768px and up) */
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 768px) {
   .ingredient-card {
     margin-left: -150px;
     animation: flow 1s normal forwards ease-in;
     animation-iteration-count: 1;
+  }
+  #inputs-section {
+    width: 400px;
   }
 }
